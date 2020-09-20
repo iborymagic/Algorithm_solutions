@@ -1,0 +1,12 @@
+const fs = require('fs');
+// var input = fs.readFileSync('/dev/stdin');
+let input = fs.readFileSync('input.txt').toString().trim();
+input = input.replace(/c=/g, '1');
+input = input.replace(/c-/g, '2');
+input = input.replace(/dz=/g, '3');
+input = input.replace(/d-/g, '4');
+input = input.replace(/lj/g, '5');
+input = input.replace(/nj/g, '6');
+input = input.replace(/s=/g, '7');
+input = input.replace(/z=/g, '8');
+console.log(input);
